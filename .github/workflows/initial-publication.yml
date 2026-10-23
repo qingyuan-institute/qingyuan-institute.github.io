@@ -1,0 +1,46 @@
+name: Publish approved 2026-10-23 static snapshot
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: initial-static-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out this repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Import only the 18 verified static files
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, pathlib, subprocess, urllib.request
+          manifest = json.loads(r'''[{"file":".nojekyll","sha256":"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b","bytes":1},{"file":"assets/FONT-LICENSE.txt","sha256":"6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2","bytes":4301},{"file":"assets/heading.ttf","sha256":"111da85a7610335b8c3e07bf0ae3ebe073169a546cb175dbbddc771734c3db1e","bytes":29288},{"file":"index.html","sha256":"7ddeb4dc0e60421cd1f5624e33bdd3203464ad1f89c2ee95d1ad38c22e39e662","bytes":58090},{"file":"news.json","sha256":"092efda627c92551c8aa2eecf491a1601db93518137e190772485312d1c444b6","bytes":34},{"file":"news/article-preview.html","sha256":"da5e34c6df58710a3c84882d73339b65fc8e2264bfb56f05fe477be97cac0532","bytes":33938},{"file":"people.json","sha256":"ef81e9db05063b5ab590f403a37bc7e5790ac5983178fc0d00dcccf7a7788813","bytes":4383},{"file":"portraits/huangdongsheng-normalized.png","sha256":"90bbacc96a62d029558169eac3986d94ac2eb5e13e85abac38afc3967a81610f","bytes":194795},{"file":"portraits/huangjingyong-normalized.png","sha256":"a0ca4710b21d82f24695d2231bf4f9f0376e99165bb1724ae064cf4012fd9f25","bytes":341614},{"file":"portraits/limingfei-normalized.png","sha256":"a53e52a29ac94d117ec0919de6f73036cbb19d527feecfec22236446297fef7f","bytes":189961},{"file":"portraits/liumao-ppt.jpg","sha256":"9f7993cc0cbdd5c6813526bfb86bd50747fba97840a68261c7aad00b11fbbfac","bytes":17828},{"file":"portraits/liyunqin-ppt.png","sha256":"bf2dfd733ce37e643eb54a7d0fdfbaaa51160d59e2e20df667a03063f02bbd03","bytes":69983},{"file":"portraits/lizhixiu-normalized.png","sha256":"4dad4f48b8e1d14cfd9c01930491f5c5fd8761b7f19ed8a41a6521ee1ed33746","bytes":323344},{"file":"portraits/wangrui-ppt.jpg","sha256":"276ea86376c315ebb0d5d4474dce662362aafb3ab685ff525850dc8b09ec797d","bytes":55376},{"file":"portraits/yangbaisong-white-v1.png","sha256":"08f5e550f2c478983427c1c07b7e0b28f163cdeee1257a55d1943ada630ed1bb","bytes":1805545},{"file":"portraits/yanghaodong-white-v1.png","sha256":"9da6649ad59c2518f5dfda0415c6be1d6b6f47a66eb0cf8a8946eb3322e61b98","bytes":1770703},{"file":"portraits/zhangjiaxin-normalized.png","sha256":"008edd9b24381760878ce9cadbe4590203442a2b995dbdcd8c804470b7a40fcf","bytes":175173},{"file":"portraits/zhouzhiyi-normalized.png","sha256":"ddd2292b58db42512de9d2e2843c17f979d4cee8f21b14e45f555711701b619d","bytes":260137}]''')
+          if pathlib.Path('index.html').exists():
+              raise SystemExit('Initial publication already exists; use the current local source for later updates.')
+          base = 'https://raw.githubusercontent.com/ncu-future-cities/ncu-future-cities.github.io/75a2fc548d686b9dfa8a49ba4510e034f82afc01/qingyuan/'
+          for entry in manifest:
+              relative = entry['file']
+              with urllib.request.urlopen(base + relative, timeout=60) as response:
+                  data = response.read()
+              assert len(data) == entry['bytes'], relative + ': size mismatch'
+              assert hashlib.sha256(data).hexdigest() == entry['sha256'], relative + ': checksum mismatch'
+              target = pathlib.Path(relative)
+              target.parent.mkdir(parents=True, exist_ok=True)
+              target.write_bytes(data)
+          subprocess.run(['git', 'add', '--'] + [item['file'] for item in manifest], check=True)
+          print('Verified and staged', len(manifest), 'static files matching the local 2026-10-23 release.')
+          PY
+      - name: Commit the approved website to main
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Publish Qingyuan Institute website from verified 2026-10-23 release'
+          git push origin HEAD:main
