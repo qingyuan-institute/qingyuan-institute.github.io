@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "version": "2026-10-23-titles-and-institute-name",
+  "status": "teacher-supplied-roster",
+  "sortNote": "校内教师按教授、副教授、讲师排列；李名飞职称由用户确认为副教授。按用户要求，讲师后连续排列刘茂、杨柏松、杨浩冬，职位按2026-10-23用户提供内容展示。",
+  "people": [
+    {
+      "id": "lizhixiu",
+      "name": "李枝秀",
+      "title": "教授",
+      "source": "https://jzysjxy.ncu.edu.cn/szdw/zzjs/yssjx/75b0549da89949718f97653234bddd20.htm",
+      "photo": "portraits/lizhixiu-normalized.png",
+      "photoAsset": "lizhixiu-normalized.png"
+    },
+    {
+      "id": "zhouzhiyi",
+      "name": "周志仪",
+      "title": "教授",
+      "source": "https://jzysjxy.ncu.edu.cn/szdw/zzjs/cxghx/328ecff7accc49be9cdcdfafc9720675.htm",
+      "photo": "portraits/zhouzhiyi-normalized.png",
+      "photoAsset": "zhouzhiyi-normalized.png"
+    },
+    {
+      "id": "huangjingyong",
+      "name": "黄景勇",
+      "title": "教授",
+      "source": "https://jzysjxy.ncu.edu.cn/szdw/zzjs/jzx/5b3f948c046f4114829386fb64441d25.htm",
+      "photo": "portraits/huangjingyong-normalized.png",
+      "photoAsset": "huangjingyong-normalized.png"
+    },
+    {
+      "id": "huangdongsheng",
+      "name": "黄东升",
+      "title": "教授",
+      "source": "https://jzysjxy.ncu.edu.cn/szdw/zzjs/yssjx/a40278905d9d4f109bf2487fc87a1e63.htm",
+      "photo": "portraits/huangdongsheng-normalized.png",
+      "photoAsset": "huangdongsheng-normalized.png"
+    },
+    {
+      "id": "zhangjiaxin",
+      "name": "张嘉新",
+      "title": "副教授",
+      "source": "https://jzysjxy.ncu.edu.cn/szdw/zzjs/jzx/d66275a2a6054a43b55d2c2a2ffb784c.htm",
+      "photo": "portraits/zhangjiaxin-normalized.png",
+      "photoAsset": "zhangjiaxin-normalized.png"
+    },
+    {
+      "id": "wangrui",
+      "name": "王睿",
+      "title": "副教授",
+      "source": "https://jzysjxy.ncu.edu.cn/szdw/zzjs/W/82df1b3dcbf24a08b5a08b0f8e4d04a3.htm",
+      "photoAsset": "wangrui-ppt.jpg",
+      "photo": "portraits/wangrui-ppt.jpg"
+    },
+    {
+      "id": "limingfei",
+      "name": "李名飞",
+      "title": "副教授",
+      "source": "https://jzysjxy.ncu.edu.cn/szdw/zzjs/cxghx/2a23e38b211542cc8b5593035d6da59f.htm",
+      "photo": "portraits/limingfei-normalized.png",
+      "photoAsset": "limingfei-normalized.png"
+    },
+    {
+      "id": "liyunqin",
+      "name": "李韵琴",
+      "title": "讲师",
+      "source": "https://jzysjxy.ncu.edu.cn/szdw/zzjs/L/9394bb4540694359842c9aae29674389.htm",
+      "photoAsset": "liyunqin-ppt.png",
+      "photo": "portraits/liyunqin-ppt.png"
+    },
+    {
+      "id": "liumao",
+      "name": "刘茂",
+      "title": "正高级工程师·南昌大学设计研究院综合分院院长",
+      "external": true,
+      "source": "",
+      "photoAsset": "liumao-ppt.jpg",
+      "bio": "南昌大学江西省地域重点实验室副主任，国家一级注册结构工程师，现任南昌大学设计研究院综合分院院长。主持完成多项重大工程项目，荣获中国建设工程鲁班奖、国家绿色建筑创新奖及多项省级优秀设计奖。",
+      "photo": "portraits/liumao-ppt.jpg"
+    },
+    {
+      "id": "yangbaisong",
+      "name": "杨柏松",
+      "title": "青原研究院办公室主任",
+      "external": true,
+      "source": "",
+      "photoAsset": "yangbaisong-white-v1.png",
+      "bio": "南昌大学青原乡村振兴发展研究院办公室主任，主要从事城市更新、乡村振兴、城乡规划、全过程咨询的经营管理工作，参与多项重大工程项目，具有丰富的经营与实践经验。",
+      "photo": "portraits/yangbaisong-white-v1.png"
+    },
+    {
+      "id": "yanghaodong",
+      "name": "杨浩冬",
+      "title": "青原研究院特派专员",
+      "external": true,
+      "source": "",
+      "photoAsset": "yanghaodong-white-v1.png",
+      "bio": "青原研究院特派专员。主要从事乡村振兴、城乡规划、城市更新及全过程工程咨询领域，协助开展科研项目落地运营。熟悉乡村振兴政策导向与地方项目落地流程，为区域城乡融合发展提供专业经营支撑。",
+      "photo": "portraits/yanghaodong-white-v1.png"
+    }
+  ]
+}

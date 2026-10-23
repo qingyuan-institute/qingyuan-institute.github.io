@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="南昌大学青原乡村振兴发展研究院：研究院介绍、人员介绍、研究方向与成果、研究院新闻。">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#2e6a67">
+  <title>南昌大学青原乡村振兴发展研究院｜Qingyuan Institute for Rural Revitalization and Development, Nanchang University</title>
+  <style>
+    @font-face{font-family:"City Serif";src:url("assets/heading.ttf") format("truetype");font-weight:500;font-style:normal;font-display:swap}
+    :root{--paper:#f1f0e8;--white:#ffffff;--ink:#213b38;--muted:#506864;--line:#c0d0c7;--accent:#2e6a67;--accent-dark:#214f4c;--celadon:#d7e6db;--serif:"City Serif","Noto Serif SC","STSong","SimSun",serif;--sans:"Microsoft YaHei","PingFang SC",sans-serif;--wrap:1264px;--gutter:48px;--header:92px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header) + 20px);scrollbar-color:var(--accent) var(--paper)}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased}
+    ::selection{background:var(--accent);color:white}
+    a{color:inherit;text-decoration:none;text-underline-offset:5px}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer}
+    :focus-visible{outline:3px solid #2e6a67;outline-offset:5px}
+    img{max-width:100%;display:block}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{text-wrap:balance}
+    .wrap{width:min(var(--wrap),calc(100% - var(--gutter)*2));margin-inline:auto}
+    .icon{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+    .skip{position:fixed;top:8px;left:8px;padding:10px 20px;background:var(--accent);color:white;z-index:100;transform:translateY(-180%)}
+    .skip:focus{transform:translateY(0)}
+    .header{position:sticky;top:0;background:var(--white);border-top:4px solid var(--accent);border-bottom:1px solid var(--line);z-index:30}
+    .header-inner{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .identity{display:flex;align-items:center;gap:23px;min-width:0}
+    .identity:hover{text-decoration:none}
+    .university-mark{width:158px;height:auto;filter:brightness(0) saturate(100%);opacity:.85}
+    .identity-text{border-left:1px solid var(--line);padding-left:23px;white-space:nowrap}
+    .institute-name{font-size:23px;font-weight:600;line-height:1.4;letter-spacing:.06em;display:block}
+    .affiliation{font-size:11px;color:var(--muted);letter-spacing:.15em;display:block;margin-top:3px}
+    .nav{display:flex;align-items:center;gap:30px;align-self:stretch}
+    .nav a{position:relative;display:flex;align-items:center;font-size:14px;white-space:nowrap}
+    .nav a:after{content:"";position:absolute;bottom:19px;left:0;right:0;height:2px;background:var(--accent);transform:scaleX(0);transition:transform .2s ease}
+    .nav a:hover,.nav a[aria-current="location"]{color:var(--accent);text-decoration:none}
+    .nav a:hover:after,.nav a[aria-current="location"]:after{transform:scaleX(1)}
+    .menu-toggle{display:none;border:1px solid var(--line);background:transparent;align-items:center;gap:8px;padding:9px 12px;color:var(--ink)}
+    .hero{padding-top:52px}
+    .hero-grid{display:grid;grid-template-columns:41% 59%;align-items:center;position:relative}
+    .hero-copy{padding:30px 38px 45px 0;position:relative;z-index:2}
+    .hero h1{font:500 clamp(42px,4.65vw,66px)/1.4 var(--serif);letter-spacing:.03em;white-space:nowrap}
+    .hero h1 span{color:var(--accent)}
+    .hero-description{margin-top:25px;max-width:420px;color:#506864;line-height:1.95;font-size:18px}
+    .primary-link{display:inline-flex;align-items:center;gap:32px;background:var(--accent);color:white;padding:13px 24px;margin-top:35px;border:1px solid var(--accent);transition:background .2s}
+    .primary-link:hover{background:var(--accent-dark);text-decoration:none}
+    .hero-art{position:relative;padding:14px 0 21px 16px}
+    .hero-art:before{content:"";position:absolute;left:0;top:0;bottom:5px;right:18px;border:1px solid #a9c8be;pointer-events:none}
+    .hero-art:after{content:"";position:absolute;bottom:0;right:-7px;width:48px;height:48px;border-right:1px solid var(--accent);border-bottom:1px solid var(--accent);pointer-events:none}
+    .hero-photo{height:477px;width:100%;object-fit:cover;object-position:51% 48%}
+    .photo-caption{position:absolute;left:36px;bottom:43px;color:#fff;background:#242a2be8;font-size:11px;letter-spacing:.06em;padding:5px 11px}
+    .observation{position:absolute;right:20px;top:32px;color:#fff;font:12px/1.5 var(--sans);letter-spacing:.14em;display:flex;align-items:center;gap:12px}
+    .observation:before{content:"";height:1px;width:36px;background:#fff}
+    .topic-strip{margin-top:37px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;align-items:center;padding-block:18px;gap:34px}
+    .topic-strip>span{color:var(--muted);font-size:12px;margin-right:auto;letter-spacing:.1em}
+    .topic-strip a{display:flex;align-items:center;gap:26px;font-size:14px}
+    .topic-strip a:not(:last-child){border-right:1px solid var(--line);padding-right:34px}
+    .topic-strip .icon{width:16px;height:16px;color:var(--accent)}
+    section[id]{scroll-margin-top:18px}
+    .section{padding-block:88px}
+    .section-head{display:flex;align-items:baseline;justify-content:space-between;gap:28px;margin-bottom:36px}
+    .section-head h2,.about-title{font:700 36px/1.5 var(--serif);letter-spacing:.025em}
+    .section-head p{color:var(--muted);font-size:13px}
+    .about-grid{display:grid;grid-template-columns:32% 68%;gap:0}
+    .about-side{padding-right:48px}
+    .about-side p{font-size:13px;color:var(--muted);margin-top:17px;line-height:2}
+    .about-body{max-width:860px}
+    .about-body .lead{font:500 27px/1.65 var(--serif);max-width:660px;letter-spacing:.02em;margin-bottom:23px}
+    .about-body>p{line-height:2.1;color:#506864;font-size:15px}
+    .about-facts{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:29px 0 0;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .about-facts dt{font-size:12px;color:var(--muted);margin-bottom:7px}
+    .about-facts dd{margin:0;font-size:15px}
+    .disciplines{margin-top:20px;display:flex;flex-wrap:wrap;gap:5px 0;color:var(--muted);font-size:12px;align-items:center}
+    .disciplines span:not(:last-child):after{content:"/";color:#999b90;margin-inline:12px}
+    .research{background:var(--accent);color:var(--white);padding-block:70px 78px}
+    .research .section-head{padding-bottom:29px;border-bottom:1px solid #5e8c87;margin-bottom:0}
+    .research .section-head p{color:#d7e6db;max-width:430px}
+    .research-item{border-bottom:1px solid #5e8c87}
+    .research-item summary{display:grid;grid-template-columns:140px 1fr 40px;align-items:center;gap:24px;list-style:none;cursor:pointer;padding:27px 0}
+    .research-item summary::-webkit-details-marker{display:none}
+    .research-item summary:hover{color:#ffffff}
+    .research-theme{font-size:12px;color:#d7e6db;letter-spacing:.16em}
+    .research-item h3{font:700 25px/1.6 var(--serif);letter-spacing:.015em}
+    .research [lang="en"]{display:block;font-family:Georgia,serif;font-weight:400;letter-spacing:0;color:#d7e6db;line-height:1.6;text-wrap:pretty}
+    .research-theme [lang="en"]{font-size:12px;margin-top:5px}
+    .research-item h3 [lang="en"]{font-size:16px;margin-top:7px;max-width:65ch}
+    .research .section-head p [lang="en"]{font-size:13px;margin-top:12px}
+    .research-prose p[lang="en"]{font-size:15px;margin-top:18px;line-height:1.75}
+    .research-body h4 [lang="en"]{font-size:12px;margin-top:2px}
+    .research-tags [lang="en"]{font-size:12px;margin-top:2px}
+    .research-body>.research-prose{margin-top:0}
+    .research-note [lang="en"]{margin-top:4px}
+    .expand-icon{border:1px solid #d1a2a7;border-radius:50%;width:34px;height:34px;display:grid;place-items:center}
+    .expand-icon svg{width:16px;height:16px}
+    .expand-icon .vertical{transform-origin:center;transition:transform .2s}
+    .research-item[open] .vertical{transform:rotate(90deg)}
+    .research-body{padding:0 64px 32px 164px;display:grid;grid-template-columns:1.45fr 1fr;gap:40px;align-items:start;color:#f1f0e8;font-size:14px;line-height:2}
+    .research-body p{max-width:620px}
+    .research-body h4{margin:0 0 9px;color:white;font-size:12px;font-weight:500;letter-spacing:.08em}
+    .research-tags{list-style:none;display:flex;flex-wrap:wrap;gap:9px;margin:0;padding:0}
+    .research-tags li{border:1px solid #a9c8be;padding:3px 10px;font-size:12px;color:white}
+    .research-note{font-size:11px;color:#d7e6db;margin-top:22px;text-align:right}
+    .team{background:var(--white)}
+    .empty-note{display:inline-flex;align-items:center;gap:9px;font-size:12px;color:var(--muted)}
+    .empty-note:before{content:"";width:6px;height:6px;border:1px solid var(--muted);border-radius:50%}
+    .team-head-note{max-width:580px;color:var(--muted);font-size:13px;line-height:1.85;text-align:right}
+    .team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+    .person{display:block;min-width:0;border-top:1px solid var(--line);padding-top:15px}
+    .person:hover{text-decoration:none}
+    .person-visual{aspect-ratio:3/4;background:#eeece5;overflow:hidden}
+    .person-visual img{width:100%;height:100%;object-fit:cover;object-position:center 28%}
+    .person h3{font:500 23px/1.5 var(--serif);margin-top:18px}
+    .person p{color:var(--muted);font-size:13px;margin-top:4px;min-height:1.8em}
+    .person-action{display:inline-flex;align-items:center;gap:9px;margin-top:16px;color:var(--accent);font-size:13px}
+    .person-action .icon{width:17px;height:17px;transition:transform .2s ease}
+    .person:hover .person-action .icon{transform:translateX(4px)}
+    .profile-list{margin-top:76px;border-top:1px solid var(--line)}
+    .profile-detail{display:grid;grid-template-columns:30% minmax(0,1fr);gap:36px;padding:36px 0;border-bottom:1px solid var(--line);scroll-margin-top:calc(var(--header) + 28px)}
+    .profile-detail:target{background:#f7f4ee}
+    .profile-detail h3{font:500 29px/1.5 var(--serif)}
+    .profile-detail .profile-title{color:var(--accent);font-size:14px;margin-top:4px}
+    .profile-copy{max-width:68ch;color:#506864;font-size:15px;line-height:2}
+    .profile-copy p+p{margin-top:12px}
+    .profile-links{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:18px;font-size:13px;color:var(--accent)}
+    .profile-links a{display:inline-flex;align-items:center;gap:7px}
+    .profile-links .icon{width:16px;height:16px}
+    .news-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:48px}
+    .news-cover{background:#d7e6db;min-height:238px;border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;color:var(--muted)}
+    .news-cover .icon{width:42px;height:42px;stroke-width:1}
+    .news-cover p{font-size:13px;letter-spacing:.08em}
+    .news-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+    .news-item{min-height:96px;display:flex;gap:30px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
+    .news-date{font-size:12px;color:var(--muted);flex:none}
+    .news-item h3{font-size:15px;font-weight:500;color:#506864}
+    .news-item p{font-size:12px;color:var(--muted);margin-top:5px}
+    .team-directory{display:inline-flex;align-items:center;gap:7px;color:var(--accent);font-size:13px;white-space:nowrap}
+    .team-directory .icon{width:16px;height:16px}
+    .news-photo-link{display:block;position:relative;overflow:hidden;min-height:238px}
+    .news-photo-link img{width:100%;height:100%;min-height:238px;object-fit:cover;transition:transform .35s ease}
+    .news-photo-link:hover img{transform:scale(1.025)}
+    .news-photo-link span{position:absolute;bottom:0;left:0;right:0;color:white;background:#213b38d9;padding:10px 16px;font-size:13px}
+    .news-item:first-child h3{color:var(--ink);line-height:1.55}
+    .news-item:first-child h3 a{color:var(--accent)}
+    .news-more-trigger{border:0;background:none;color:var(--accent);font-size:13px;padding:8px 0;display:inline-flex;align-items:center;gap:8px}
+    .news-more-trigger:hover{text-decoration:underline}
+    .news-dialog{width:min(680px,calc(100% - 32px));max-height:min(78vh,740px);border:1px solid var(--line);padding:30px;background:var(--white);color:var(--ink);box-shadow:0 22px 70px #213b383d;overflow:auto}
+    .news-dialog::backdrop{background:#1e2424a8}
+    .news-dialog-head{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:22px}
+    .news-dialog h3{font:500 26px/1.5 var(--serif)}
+    .news-dialog-close{border:1px solid var(--line);background:transparent;width:36px;height:36px;line-height:1}
+    .news-dialog .news-list{max-height:none}
+    .news-dialog-note{margin-top:18px;font-size:12px;color:var(--muted)}
+    .news-article{scroll-margin-top:calc(var(--header) + 28px);margin-top:80px;border-top:1px solid var(--line);padding-top:58px}
+    .news-article-inner{max-width:900px;margin-inline:auto}
+    .article-return{display:inline-flex;align-items:center;gap:9px;color:var(--accent);font-size:13px;margin-bottom:26px}
+    .news-article h3{font:500 clamp(26px,2.5vw,35px)/1.5 var(--serif);letter-spacing:.02em}
+    .article-subtitle{font-size:16px;color:#4f5752;margin-top:11px;line-height:1.75}
+    .article-meta{display:flex;flex-wrap:wrap;gap:12px 26px;color:var(--muted);font-size:12px;padding:17px 0 26px;border-bottom:1px solid var(--line)}
+    .article-figure{margin:30px 0 36px}
+    .article-figure img{width:100%;height:auto}
+    .article-figure figcaption{color:var(--muted);font-size:12px;margin-top:9px;text-align:center}
+    .article-body{max-width:72ch;margin-inline:auto;font-size:16px;line-height:2.05;color:#39413d}
+    .article-body p+p{margin-top:17px}
+    .article-source{padding-top:24px;margin-top:28px;border-top:1px solid var(--line);text-align:right;font-size:12px;color:var(--muted)}
+    .footer{background:#213b38;color:var(--paper);padding:46px 0 20px}
+    .footer-main{display:flex;justify-content:space-between;align-items:center;gap:28px;padding-bottom:30px;border-bottom:1px solid #646b64}
+    .footer-name{font:500 23px/1.6 var(--serif);letter-spacing:.04em}
+    .footer-name-en{font:13px/1.6 Georgia,serif;color:#d7e6db;margin-top:3px}
+    .footer-main p{font-size:12px;color:#d7e6db;margin-top:10px}
+    .footer-links{display:flex;gap:26px;font-size:13px;flex:none}
+    .footer-links a{display:flex;align-items:center;gap:10px}
+    .footer-bottom{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;font-size:11px;color:#d7e6db;padding-top:19px}
+    .credits{max-width:590px;text-align:right}
+    .credits summary{cursor:pointer;list-style:none;text-decoration:underline;text-underline-offset:4px}
+    .credits summary::-webkit-details-marker{display:none}
+    .credits-content{padding-top:15px;line-height:1.9}
+    .credits-content p+p{margin-top:8px}
+    .credits-content a{text-decoration:underline}
+    .font-license{white-space:pre-wrap;text-align:left;max-height:230px;overflow:auto;font-size:11px;margin-top:12px}
+    @media(min-width:1100px){.hero-art{animation:arrive .85s cubic-bezier(.16,1,.3,1) both}@keyframes arrive{from{clip-path:inset(0 8% 0 0)}to{clip-path:inset(0 0 0 0)}}}
+    @media(max-width:1100px){:root{--gutter:32px}.identity{gap:15px}.identity-text{padding-left:15px}.university-mark{width:135px}.institute-name{font-size:20px}.nav{gap:20px}.hero h1{font-size:50px}.hero-photo{height:445px}.hero-copy{padding-right:20px}.hero-description{font-size:14px}.research-item summary{grid-template-columns:110px 1fr 34px;gap:20px}.research-body{padding-left:130px;padding-right:25px;gap:25px}}
+    @media(max-width:850px){:root{--header:84px;--gutter:24px}.header-inner{min-height:80px}.university-mark{width:122px}.institute-name{font-size:19px}.affiliation{font-size:10px}.menu-toggle{display:flex}.nav{display:none;position:absolute;left:0;right:0;top:100%;padding:10px 24px 20px;background:var(--white);border-bottom:1px solid var(--line);box-shadow:0 12px 20px #213b380a;gap:0;flex-wrap:wrap}.nav.is-open{display:flex}.nav a{min-height:48px;width:50%;justify-content:center}.nav a:after{bottom:4px;left:20%;right:20%}.hero{padding-top:30px}.hero-grid{grid-template-columns:43% 57%}.hero h1{font-size:40px}.hero-photo{height:400px}.hero-description{font-size:13px;margin-top:20px}.primary-link{padding:11px 17px;gap:20px;font-size:13px;margin-top:24px}.topic-strip{gap:20px}.topic-strip a{font-size:13px;gap:15px}.topic-strip a:not(:last-child){padding-right:20px}.topic-strip>span{display:none}.topic-strip{justify-content:space-between}.section{padding-block:62px}.about-grid{grid-template-columns:28% 72%}.about-side{padding-right:24px}.about-title,.section-head h2{font-size:28px}.about-body .lead{font-size:24px}.about-body>p{font-size:14px}.research-body{grid-template-columns:1fr}.research-item h3{font-size:21px}.team-grid{gap:20px;grid-template-columns:repeat(2,1fr)}.news-grid{gap:25px;grid-template-columns:1fr 1.3fr}.footer-name{font-size:20px}.footer-links{gap:15px;font-size:12px}}
+    @media(max-width:600px){:root{--gutter:22px;--header:78px}.header-inner{min-height:74px;gap:10px}.university-mark{width:96px}.identity{gap:12px}.identity-text{padding-left:12px}.institute-name{font-size:16px;letter-spacing:.02em}.affiliation{font-size:9px;letter-spacing:0}.menu-toggle{padding:9px;border:0}.menu-toggle span{display:none}.hero-grid{display:flex;flex-direction:column;align-items:stretch}.hero-copy{padding:5px 0 31px}.hero h1{font-size:43px;line-height:1.4}.hero-description{max-width:340px;font-size:14px;margin-top:19px}.primary-link{margin-top:23px;padding:11px 20px}.hero-art{padding:10px 0 14px 10px;margin-left:6px}.hero-art:before{bottom:5px;right:12px}.hero-art:after{width:30px;height:30px;right:-4px}.hero-photo{height:272px;object-position:center}.photo-caption{bottom:28px;left:22px;font-size:10px}.observation{top:24px;right:12px;font-size:10px}.topic-strip{margin-top:26px;padding-block:17px;gap:12px}.topic-strip a{font-size:12px;gap:9px}.topic-strip a:not(:last-child){padding-right:12px}.topic-strip .icon{width:13px;height:13px}.section{padding-block:49px}.about-grid{display:block}.about-side{padding:0 0 23px}.about-side p{display:none}.about-body .lead{font-size:25px;line-height:1.65;margin-bottom:17px}.about-body>p{font-size:14px;line-height:2}.about-facts{grid-template-columns:1fr;gap:18px;padding-block:20px;margin-top:24px}.about-facts dd{font-size:14px}.disciplines{font-size:11px}.disciplines span:not(:last-child):after{margin-inline:8px}.research{padding-block:46px}.section-head{display:block;margin-bottom:25px}.section-head p,.section-head .empty-note{margin-top:10px;font-size:12px}.research .section-head{padding-bottom:23px}.research-item summary{grid-template-columns:1fr 30px;gap:7px 12px;padding-block:22px}.research-theme{grid-column:1;font-size:11px;letter-spacing:.1em}.research-item h3{grid-column:1;grid-row:2;font-size:21px;line-height:1.7}.expand-icon{grid-column:2;grid-row:1 / 3;width:29px;height:29px}.research-body{display:block;padding:0 0 26px;font-size:13px}.research-body>div{margin-top:22px}.research-tags{gap:7px}.research-tags li{font-size:11px;padding:3px 8px}.research-note{text-align:left;font-size:10px}.team-grid{gap:26px 16px}.portrait-placeholder{aspect-ratio:1.05}.portrait-placeholder .icon{width:25px;height:25px}.portrait-placeholder span{font-size:11px}.person h3{font-size:14px;margin-top:13px}.person p{font-size:11px}.person .person-line{margin-top:14px}.news-grid{display:block}.news-cover{min-height:180px;margin-bottom:25px}.news-item{gap:20px;min-height:96px}.news-date{font-size:11px}.news-item h3{font-size:14px}.news-item p{font-size:11px}.footer{padding:33px 0 23px}.footer-main{display:block;padding-bottom:25px}.footer-name{font-size:20px}.footer-main p{font-size:11px}.footer-links{margin-top:25px;justify-content:space-between}.footer-bottom{display:block;font-size:10px}.credits{text-align:left;margin-top:14px}}
+    @media(max-width:360px){:root{--gutter:17px}.university-mark{width:85px}.identity{gap:9px}.identity-text{padding-left:9px}.institute-name{font-size:15px}.affiliation{font-size:8px}.hero h1{font-size:39px}.topic-strip{gap:8px}.topic-strip a{font-size:11px;gap:7px}.topic-strip a:not(:last-child){padding-right:8px}.hero-photo{height:245px}}
+    .menu-toggle{min-width:44px;min-height:44px}
+    .affiliation,.photo-caption,.observation,.research-note,.footer-bottom{font-size:11px}
+    @media(max-width:600px){.relation-label{display:none}}
+    @media(max-width:360px){.institute-name{font-size:14px}}
+    @media(max-width:600px){.news-photo-link,.news-photo-link img{min-height:180px}.news-article{margin-top:53px;padding-top:38px}.news-article h3{font-size:27px}.article-subtitle{font-size:14px}.article-meta{padding-bottom:20px}.article-figure{margin-block:23px 26px}.article-body{font-size:14px;line-height:1.95}.article-body p+p{margin-top:14px}.team-directory{margin-top:11px}}
+    @media(max-width:600px){.team-head-note{text-align:left;margin-top:9px;font-size:12px}.team-grid{grid-template-columns:1fr;gap:20px}.person{display:grid;grid-template-columns:102px 1fr;grid-template-rows:auto auto auto;gap:0 17px;padding-top:14px}.person-visual{grid-row:1/4;width:102px;height:136px}.person h3{margin-top:1px;font-size:21px}.person p{font-size:12px}.person-action{margin-top:7px}.profile-list{margin-top:48px}.profile-detail{display:block;padding:29px 0}.profile-detail h3{font-size:25px}.profile-copy{font-size:14px;margin-top:13px}.profile-links{gap:11px 22px}}
+    .institute-english{display:block;font-size:11px;line-height:1.35;color:var(--muted);letter-spacing:.01em;margin-top:2px;white-space:normal;max-width:270px}
+    .nav a{flex-direction:column;justify-content:center;align-items:flex-start;line-height:1.4}
+    .nav small,.section-en,.hero-en,.about-en{font-family:Georgia,serif;color:var(--muted);font-weight:400;letter-spacing:.04em}
+    .nav small{font-size:11px;margin-top:2px}
+    .hero h1{font-size:clamp(38px,4.1vw,58px);font-weight:700;letter-spacing:.01em;white-space:normal;line-height:1.4}
+    .hero-en{font-size:17px;line-height:1.6;margin-top:18px;max-width:400px}
+    .hero-art{overflow:hidden}
+    .hero-frame{height:477px;position:relative;overflow:hidden;background:#2e3331;container-type:size}
+    .hero-slide{position:absolute;inset:0;opacity:0;transition:opacity .7s ease}
+    .hero-slide.is-active{opacity:1}
+    .hero-slide img{width:100%;height:100%;object-fit:cover}
+    .hero-slide:first-child img{object-position:51% 48%}
+    .hero-slide:nth-child(2) img{position:absolute;left:50%;top:50%;width:100cqh;height:100cqw;max-width:none;object-position:center;transform:translate(-50%,-50%) rotate(-90deg)}
+    .hero-slide:nth-child(3) img{object-position:50% 54%}
+    .hero-slide:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 48%,#1119)}
+    .hero-quote{position:absolute;left:18px;right:18px;bottom:54px;padding:10px 13px;background:#213b38dc;color:white;font:500 19px/1.6 var(--serif);z-index:2;letter-spacing:.02em;text-align:center}
+    .carousel-controls{position:absolute;right:25px;bottom:37px;display:flex;gap:7px;z-index:3}
+    .carousel-controls button{width:28px;height:28px;border:1px solid #fffc;background:#213b3899;color:white;padding:0;line-height:1}
+    .carousel-controls button[aria-current="true"]{background:var(--accent);border-color:var(--accent)}
+    .section-en{display:block;font-size:13px;margin-top:1px}
+    .about-en{font-size:13px;line-height:1.65;margin-top:10px}
+    .team-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:27px 24px}
+    .person-visual{width:min(100%,166px);aspect-ratio:3/4}
+    .person h3{margin-top:12px}
+    .person-action{margin-top:9px}
+    .profile-list{margin-top:58px}
+    @media(max-width:1100px){.nav{gap:14px}.nav a{font-size:12px}.institute-english{max-width:220px}.hero-frame{height:445px}.hero h1{font-size:41px}}
+    @media(max-width:850px){.nav a{align-items:center}.hero-frame{height:400px}.hero h1{font-size:35px}.hero-en{font-size:12px}.team-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:600px){.institute-english{font-size:11px;max-width:178px}.hero h1{font-size:39px}.hero-en{font-size:12px;margin-top:11px}.hero-frame{height:272px}.hero-quote{left:10px;right:10px;bottom:48px;font-size:14px;padding:7px 10px}.carousel-controls{right:14px;bottom:27px}.team-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 14px}.person{display:block}.person-visual{width:min(100%,130px);height:auto;aspect-ratio:3/4}.person h3{font-size:19px;margin-top:10px}.person p{font-size:11px;min-height:3.2em}.person-action{font-size:11px;margin-top:5px}.team-head-note{text-align:left}.section-en{font-size:11px}}
+    @media(max-width:360px){.hero h1{font-size:34px}.institute-english{max-width:152px}.hero-frame{height:245px}}
+    @media(min-width:601px) and (max-width:1100px){.hero h1{font-size:clamp(29px,3.8vw,42px)}.hero-description{font-size:16px}.hero-en{font-size:15px}}
+    @media(max-width:600px){.hero h1{font-size:clamp(32px,10.5vw,44px)}.hero-description{font-size:16px}.hero-en{font-size:14px}.research-item h3 [lang="en"]{font-size:14px}.research-prose p[lang="en"]{font-size:14px}.person p{min-height:1.8em}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+    @media print{.header{position:static}.menu-toggle,.primary-link,.footer-links{display:none}.nav{display:none}.research{background:white;color:#213b38}.research .section-head p,.research-theme,.research-body,.research-body h4,.research-tags li,.research-note{color:#213b38}.research-body{display:block!important}.research-item{break-inside:avoid}.footer{background:white;color:#213b38}.footer-main p,.footer-bottom{color:#506864}}
+  
+/* User-pinned Song porcelain palette; architecture inherited unchanged. */
+.identity-text{border:0;padding-left:0!important}
+.research :focus-visible,.footer :focus-visible{outline-color:#f1f0e8}
+.expand-icon{border-color:#a9c8be}
+.carousel-controls button:focus-visible{outline:3px solid #213b38;outline-offset:2px;box-shadow:0 0 0 6px #f1f0e8}
+.institute-name{font-family:var(--serif);font-size:28px;font-weight:700;letter-spacing:.06em}
+.identity-text .institute-english{max-width:none;font-size:13px}
+.identity-text .affiliation{font-size:11px}
+.hero h1{white-space:normal}
+.theme-placeholder{height:100%;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:50px;background:#d7e6db;color:#2e6a67}
+.hero-slide:nth-child(2) .theme-placeholder{background:#a9c8be;color:#213b38}
+.hero-slide:nth-child(3) .theme-placeholder{background:#2e6a67;color:#f1f0e8}
+.hero-slide:after{display:none}
+.place-title{font:700 clamp(42px,5vw,70px)/1.5 var(--serif);letter-spacing:.08em}
+.place-en{font:15px/1.7 Georgia,serif;letter-spacing:.08em;margin-top:8px}
+.place-caption{font-size:13px;margin-top:42px;padding-top:18px;border-top:1px solid currentColor;max-width:100%}
+.carousel-controls button{background:#f1f0e8;color:#213b38;border-color:#2e6a67}
+.carousel-controls button[aria-current="true"]{background:#2e6a67;color:white}
+.carousel-controls .carousel-pause{width:auto;min-width:48px;padding-inline:8px;border-radius:2px;font-size:11px}
+.research-output{grid-column:1/-1;margin-top:4px;padding-top:15px;border-top:1px solid #5e8c87;font-size:13px}
+.research-output span[lang="en"]{font-size:12px}
+.news-cover{align-items:flex-start;padding:34px;background:#d7e6db;color:#213b38;min-height:320px}
+.news-cover h3{font:700 27px/1.5 var(--serif)}
+.news-cover .team-directory{margin-top:24px}
+.news-empty{padding:25px 0;color:var(--muted);list-style:none}
+.news-dialog-close{display:flex;align-items:center;justify-content:center;flex:none}
+.footer{background:#213b38}
+.footer-main{border-color:#5e8c87}
+.article-page .header{position:relative}
+.article-page .news-article{margin:0;border:0;padding:48px 0 70px}
+.article-page .article-return{margin-bottom:32px;display:inline-block}
+.article-page h1{font:700 clamp(27px,3vw,40px)/1.5 var(--serif)}
+.article-page .article-body{max-width:72ch;margin-inline:auto}
+.article-image-placeholder{min-height:230px;background:#d7e6db;color:#213b38;display:flex;align-items:center;justify-content:center;padding:30px;text-align:center;margin-block:30px}
+@media(max-width:850px){.institute-name{font-size:24px}.theme-placeholder{padding:30px}.place-title{font-size:42px}.place-en{font-size:12px;letter-spacing:.03em}.place-caption{margin-top:28px;font-size:12px}.research-output{margin-top:0}}
+@media(max-width:600px){.institute-name{font-size:22px}.identity-text .institute-english{font-size:11px}.identity-text .affiliation{font-size:10px}.theme-placeholder{padding:27px 22px 54px}.place-title{font-size:40px}.place-en{font-size:11px}.place-caption{margin-top:18px;padding-top:12px;font-size:11px}.news-cover{min-height:240px;padding:26px}.news-cover h3{font-size:24px}.article-page .header-inner{flex-wrap:wrap;padding-block:12px}.article-page .header-inner>.team-directory{margin-left:auto}.article-page .news-article{padding-block:30px 50px}.research-output{padding-top:12px}.footer-bottom{gap:20px}}
+@media(max-width:600px){.hero-art{padding-bottom:18px}.hero-art .photo-caption{position:static;display:block;background:none;color:var(--muted);padding:12px 0 0;font-size:11px}.carousel-controls{bottom:64px}}
+
+/* Teacher-supplied roster and agreement, 2026-10-22. */
+.person-external{cursor:default}
+.person .person-bio{font-size:13px;line-height:1.9;margin-top:12px;color:var(--ink);min-height:0}
+.person-visual{background:#fff}
+.person-visual img{object-fit:contain;object-position:center bottom}
+.topic-strip{flex-wrap:wrap;gap:18px 24px}
+.topic-strip a{gap:14px}
+.topic-strip a:not(:last-child){padding-right:24px}
+@media(max-width:600px){.topic-strip{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px}.topic-strip a{justify-content:space-between;font-size:13px}.topic-strip a:not(:last-child){border:0;padding:0}.person .person-bio{font-size:12px;line-height:1.9}.disciplines{display:flex;flex-wrap:wrap;gap:8px 14px}.disciplines span:not(:last-child):after{display:none}}
+
+/* External staff biographies are collapsed until requested. */
+.person-bio-toggle{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:4px 0;margin-top:5px;border:0;background:transparent;color:var(--accent);font:inherit;font-size:13px;cursor:pointer;text-align:left}
+.person-bio-toggle:hover{text-decoration:underline;text-underline-offset:4px}
+.person-bio-toggle .icon{width:16px;height:16px}
+.person-bio-toggle[aria-expanded="true"] .icon{transform:rotate(180deg)}
+.person .person-bio[hidden]{display:none}
+.team-grid{align-items:start}
+
+/* Full institute name and confirmed positions, 2026-10-23. */
+.header-inner{padding-block:14px}
+.identity{flex:1;min-width:0}
+.identity-text{white-space:normal;max-width:640px}
+.name-part{display:inline-block}
+.institute-name{font-size:clamp(22px,2.1vw,28px);letter-spacing:.02em}
+.identity-text .institute-english{max-width:560px;line-height:1.45;text-wrap:pretty}
+.nav,.menu-toggle{flex-shrink:0}
+.footer-main>div:first-child{min-width:0;max-width:760px}
+.footer-name-en{max-width:650px;text-wrap:pretty}
+.footer-address{line-height:1.9}
+.person-title{overflow-wrap:anywhere}
+@media(max-width:1100px) and (min-width:851px){.institute-name{font-size:23px}.identity-text .institute-english{font-size:12px}}
+@media(max-width:600px){.header-inner{align-items:center;padding-block:12px}.institute-name{font-size:21px;letter-spacing:0}.identity-text .institute-english{font-size:10px;line-height:1.45}.footer-name{font-size:21px;letter-spacing:0}.footer-name-en{font-size:12px}}
+
+/* Research detail: prose only, without collaboration topic tags. */
+.research-body{grid-template-columns:1fr}
+.research-body p{max-width:800px}
+
+/* Full postal address beneath the header title. */
+.identity-text .affiliation{letter-spacing:0;line-height:1.7;max-width:560px}
+</style>
+</head>
+<body id="top">
+  <a class="skip" href="#main">跳转到主要内容</a>
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="diagonal" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="up" viewBox="0 0 24 24"><path d="M12 20V4M6 10l6-6 6 6"/></symbol>
+    <symbol id="photo" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8" cy="8" r="1.5"/><path d="m3 18 6-6 4 4 3-3 5 5"/></symbol>
+  </svg>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="identity" href="#top" aria-label="南昌大学青原乡村振兴发展研究院，返回首页"><span class="identity-text"><span class="institute-name"><span class="name-part">南昌大学青原</span><span class="name-part">乡村振兴发展研究院</span></span><span class="institute-english" lang="en">Qingyuan Institute for Rural Revitalization and Development, Nanchang University</span><span class="affiliation">江西省吉安市青原区河东街道东井冈路 青原区行政中心（发改委大楼6楼）</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="展开导航菜单"><span>菜单</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <nav class="nav" id="main-nav" aria-label="主导航"><a href="#about">研究院介绍<small lang="en">About</small></a><a href="#team">人员介绍<small lang="en">People</small></a><a href="#research">研究方向与成果<small lang="en">Research</small></a><a href="#news">研究院新闻<small lang="en">News</small></a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-heading">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-heading">立足青原山水，<br><span>共促乡村振兴</span></h1>
+          <p class="hero-en" lang="en">Rooted in Qingyuan.<br>Working together for rural revitalisation.</p>
+          <p class="hero-description">连接高校研究与地方需求，<br>推动乡村建设、文旅融合、<br>产业创新与人才合作。</p>
+          <a class="primary-link" href="#research">探索研究方向<svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a>
+        </div>
+        <figure class="hero-art">
+          <div class="hero-frame" aria-label="青原主题轮播">
+            <div class="hero-slide is-active" aria-hidden="false"><div class="theme-placeholder"><span class="place-title">山水青原</span><span class="place-en" lang="en">LANDSCAPE &amp; CULTURE</span><span class="place-caption">青原山水与地域文化</span></div></div>
+            <div class="hero-slide" aria-hidden="true"><div class="theme-placeholder"><span class="place-title">行读青原</span><span class="place-en" lang="en">EXPLORE &amp; DISCOVER</span><span class="place-caption">景区导览与游览体验</span></div></div>
+            <div class="hero-slide" aria-hidden="true"><div class="theme-placeholder"><span class="place-title">数字文旅</span><span class="place-en" lang="en">CULTURE IN NEW DIMENSIONS</span><span class="place-caption">AR 明信片与数字文化表达</span></div></div>
+          </div>
+          <figcaption class="photo-caption" id="hero-caption">山水青原</figcaption>
+          <div class="carousel-controls" role="group" aria-label="选择首页主题"><button type="button" aria-label="显示第1个主题" aria-current="true">1</button><button type="button" aria-label="显示第2个主题" aria-current="false">2</button><button type="button" aria-label="显示第3个主题" aria-current="false">3</button><button type="button" class="carousel-pause" aria-label="暂停自动切换" aria-pressed="false">暂停</button></div>
+        </figure>
+      </div>
+      <div class="topic-strip" aria-label="研究主题快速入口"><span>江西省吉安市青原区</span><a href="#rural" data-open-research="rural">农业农村<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></a><a href="#tourism" data-open-research="tourism">文旅融合<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></a><a href="#industry" data-open-research="industry">产业创新<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></a><a href="#talent" data-open-research="talent">人才合作<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></a></div>
+    </section>
+    <section class="section wrap" id="about" aria-labelledby="about-title"><div class="about-grid">
+      <div class="about-side"><h2 class="about-title" id="about-title">研究院介绍<span class="section-en" lang="en">About the Institute</span></h2><p>立足青原<br>连接研究与实践</p></div>
+      <div class="about-body"><h3 class="lead">立足地方需求，<br>服务乡村振兴。</h3><p class="about-en" lang="en">Connecting university research with rural development in Qingyuan.</p><p>根据共建合作协议，吉安市青原区人民政府与南昌大学共同建设“南昌大学青原乡村振兴发展研究院”。研究院结合青原区产业发展、文化资源与乡村振兴需求，发挥高校在科技创新、人才交流合作、文化传播等方面的优势，开展农业农村建设、文旅融合、产业创新及人才合作等领域的研究与实践。</p><p class="about-en" lang="en">Under the joint-development agreement between Qingyuan District People’s Government and Nanchang University, the institute brings university research and talent together with local needs in rural development, culture and tourism, industrial innovation and talent collaboration.</p>
+      <dl class="about-facts"><div><dt>地域关注 / Regional Focus</dt><dd>江西省吉安市青原区</dd></div><div><dt>共建单位 / Joint Partners</dt><dd>吉安市青原区人民政府 · 南昌大学</dd></div></dl><div class="disciplines" aria-label="合作领域"><span>农业农村 / Rural Development</span><span>文旅融合 / Culture &amp; Tourism</span><span>产业创新 / Industrial Innovation</span><span>人才合作 / Talent Collaboration</span></div></div>
+    </div></section>
+    <section class="research" id="research" aria-labelledby="research-title"><div class="wrap">
+      <div class="section-head"><h2 id="research-title">研究方向与成果<span class="section-en" lang="en">Research &amp; Projects</span></h2><p>围绕共建合作协议，开展四个领域的研究与实践。<span lang="en">Four areas of collaboration set out in the joint-development agreement.</span></p></div>
+      <details class="research-item" id="rural" open><summary><span class="research-theme">农业农村<span lang="en">Rural Development</span></span><h3>推动农业农村建设<span lang="en">Agriculture and Rural Development</span></h3><span class="expand-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="vertical" d="M12 5v14"/></svg></span></summary><div class="research-body"><div class="research-prose"><p>围绕青原区乡村振兴需求，探索建设“四融一共”和美乡村示范点，开展规划设计、技术支持与运营帮扶。依托现有农业产业基础，开展乡村产业品牌设计与包装、营销策划推广、农产品供应链及新型农村集体经济等方面的研究与实践，推动农业人才培训、产业对接和资源共享。</p><p lang="en">Support rural demonstration sites in Qingyuan through planning, technical advice and operational assistance. Work on agricultural branding, packaging, marketing, supply chains and rural collective economies, alongside training and resource sharing.</p></div></div></details>
+<details class="research-item" id="tourism" ><summary><span class="research-theme">文旅融合<span lang="en">Culture and Tourism</span></span><h3>推进文旅融合发展<span lang="en">Integrated Culture and Tourism Development</span></h3><span class="expand-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="vertical" d="M12 5v14"/></svg></span></summary><div class="research-body"><div class="research-prose"><p>围绕青原区相关景区，推动研学基地与写生基地建设，组织专题研学、写生等活动，促进教育与旅游深度融合。开展文旅资源调研，挖掘青原庐陵文化内涵，参与城市文旅 IP 设计与文化创意礼品开发，支持文旅资源开发与创新。</p><p lang="en">Develop field-study and sketching opportunities in Qingyuan’s scenic areas. Research local tourism resources and Luling culture, and contribute to tourism identity design and cultural gift development.</p></div></div></details>
+<details class="research-item" id="industry" ><summary><span class="research-theme">产业创新<span lang="en">Industry and Innovation</span></span><h3>推动产业创新与企业赋能<span lang="en">Industrial Innovation and Enterprise Development</span></h3><span class="expand-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="vertical" d="M12 5v14"/></svg></span></summary><div class="research-body"><div class="research-prose"><p>为青原区相关企业提供产品包装设计与优化支持，提升品牌表达、功能性和市场适应性，并推广环保包装。推动食品科学领域的创新科技成果在辖区企业落地转化；结合市场调研与目标受众分析，开展品牌定位、形象设计、数字营销与社交媒体推广，提供持续的营销优化与效果评估支持。</p><p lang="en">Support product packaging, brand communication and environmentally responsible design. Facilitate the application of food-science research in local enterprises, alongside market research, brand positioning, digital marketing and evaluation.</p></div></div></details>
+<details class="research-item" id="talent" ><summary><span class="research-theme">人才合作<span lang="en">Talent and Collaboration</span></span><h3>人才交流与合作<span lang="en">Talent Exchange and Collaboration</span></h3><span class="expand-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="vertical" d="M12 5v14"/></svg></span></summary><div class="research-body"><div class="research-prose"><p>推动人才双向交流与订单式教育培训，支持毕业生就业创业、返乡实习实践及就业创业服务点建设。结合青原产业特色与乡村资源，联合举办创新创业大赛，整合设计、规划、运营等领域资源；共同申报人才项目，争取共建人才培养和博士后实践基地、技术创新中心等平台，组织教师与学生开展教学、科研和实践活动。</p><p lang="en">Promote talent exchange, tailored training, graduate employment and entrepreneurship. Collaborate on innovation competitions, talent programmes and training or research platforms, with opportunities for teaching, research and field practice.</p></div></div></details>
+      <p class="research-note">点击研究方向展开详情。<span lang="en">Select a research area to view details.</span></p>
+    </div></section>
+    <section class="section team" id="team" aria-labelledby="team-title"><div class="wrap">
+      <div class="section-head"><h2 id="team-title">人员介绍<span class="section-en" lang="en">People</span></h2><div class="team-head-note"><p>点击教师卡片查看学院主页；点击“展开介绍”查看人员简介。</p><a class="team-directory" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/index.htm" target="_blank" rel="noopener noreferrer">查看学院教师目录<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></a></div></div>
+      <div class="team-grid" aria-label="研究院团队成员"><a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/yssjx/75b0549da89949718f97653234bddd20.htm" target="_blank" rel="noopener noreferrer" aria-label="查看李枝秀南昌大学教师主页"><div class="person-visual"><img src="portraits/lizhixiu-normalized.png" alt="李枝秀肖像" width="600" height="800" loading="lazy"></div><h3 id="person-lizhixiu">李枝秀</h3><p class="person-title">教授</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
+<a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/cxghx/328ecff7accc49be9cdcdfafc9720675.htm" target="_blank" rel="noopener noreferrer" aria-label="查看周志仪南昌大学教师主页"><div class="person-visual"><img src="portraits/zhouzhiyi-normalized.png" alt="周志仪肖像" width="600" height="800" loading="lazy"></div><h3 id="person-zhouzhiyi">周志仪</h3><p class="person-title">教授</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
+<a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/jzx/5b3f948c046f4114829386fb64441d25.htm" target="_blank" rel="noopener noreferrer" aria-label="查看黄景勇南昌大学教师主页"><div class="person-visual"><img src="portraits/huangjingyong-normalized.png" alt="黄景勇肖像" width="600" height="800" loading="lazy"></div><h3 id="person-huangjingyong">黄景勇</h3><p class="person-title">教授</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
+<a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/yssjx/a40278905d9d4f109bf2487fc87a1e63.htm" target="_blank" rel="noopener noreferrer" aria-label="查看黄东升南昌大学教师主页"><div class="person-visual"><img src="portraits/huangdongsheng-normalized.png" alt="黄东升肖像" width="600" height="800" loading="lazy"></div><h3 id="person-huangdongsheng">黄东升</h3><p class="person-title">教授</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
+<a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/jzx/d66275a2a6054a43b55d2c2a2ffb784c.htm" target="_blank" rel="noopener noreferrer" aria-label="查看张嘉新南昌大学教师主页"><div class="person-visual"><img src="portraits/zhangjiaxin-normalized.png" alt="张嘉新肖像" width="600" height="800" loading="lazy"></div><h3 id="person-zhangjiaxin">张嘉新</h3><p class="person-title">副教授</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
+<a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/W/82df1b3dcbf24a08b5a08b0f8e4d04a3.htm" target="_blank" rel="noopener noreferrer" aria-label="查看王睿南昌大学教师主页"><div class="person-visual"><img src="portraits/wangrui-ppt.jpg" alt="王睿肖像" width="600" height="800" loading="lazy"></div><h3 id="person-wangrui">王睿</h3><p class="person-title">副教授</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
+<a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/cxghx/2a23e38b211542cc8b5593035d6da59f.htm" target="_blank" rel="noopener noreferrer" aria-label="查看李名飞南昌大学教师主页"><div class="person-visual"><img src="portraits/limingfei-normalized.png" alt="李名飞肖像" width="600" height="800" loading="lazy"></div><h3 id="person-limingfei">李名飞</h3><p class="person-title">副教授</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
+<a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/L/9394bb4540694359842c9aae29674389.htm" target="_blank" rel="noopener noreferrer" aria-label="查看李韵琴南昌大学教师主页"><div class="person-visual"><img src="portraits/liyunqin-ppt.png" alt="李韵琴肖像" width="600" height="800" loading="lazy"></div><h3 id="person-liyunqin">李韵琴</h3><p class="person-title">讲师</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
+<article class="person person-external" aria-labelledby="person-liumao"><div class="person-visual"><img src="portraits/liumao-ppt.jpg" alt="刘茂肖像" width="600" height="800" loading="lazy"></div><h3 id="person-liumao">刘茂</h3><p class="person-title">正高级工程师·南昌大学设计研究院综合分院院长</p><button class="person-bio-toggle" type="button" aria-expanded="false" aria-controls="bio-liumao"><span>展开介绍</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><p class="person-bio" id="bio-liumao" hidden>南昌大学江西省地域重点实验室副主任，国家一级注册结构工程师，现任南昌大学设计研究院综合分院院长。主持完成多项重大工程项目，荣获中国建设工程鲁班奖、国家绿色建筑创新奖及多项省级优秀设计奖。</p></article>
+<article class="person person-external" aria-labelledby="person-yangbaisong"><div class="person-visual"><img src="portraits/yangbaisong-white-v1.png" alt="杨柏松肖像" width="600" height="800" loading="lazy"></div><h3 id="person-yangbaisong">杨柏松</h3><p class="person-title">青原研究院办公室主任</p><button class="person-bio-toggle" type="button" aria-expanded="false" aria-controls="bio-yangbaisong"><span>展开介绍</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><p class="person-bio" id="bio-yangbaisong" hidden>南昌大学青原乡村振兴发展研究院办公室主任，主要从事城市更新、乡村振兴、城乡规划、全过程咨询的经营管理工作，参与多项重大工程项目，具有丰富的经营与实践经验。</p></article>
+<article class="person person-external" aria-labelledby="person-yanghaodong"><div class="person-visual"><img src="portraits/yanghaodong-white-v1.png" alt="杨浩冬肖像" width="600" height="800" loading="lazy"></div><h3 id="person-yanghaodong">杨浩冬</h3><p class="person-title">青原研究院特派专员</p><button class="person-bio-toggle" type="button" aria-expanded="false" aria-controls="bio-yanghaodong"><span>展开介绍</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><p class="person-bio" id="bio-yanghaodong" hidden>青原研究院特派专员。主要从事乡村振兴、城乡规划、城市更新及全过程工程咨询领域，协助开展科研项目落地运营。熟悉乡村振兴政策导向与地方项目落地流程，为区域城乡融合发展提供专业经营支撑。</p></article></div>
+    </div></section>
+    <section class="section wrap" id="news" aria-labelledby="news-title">
+      <div class="section-head"><h2 id="news-title">研究院新闻<span class="section-en" lang="en">News</span></h2><button class="news-more-trigger" type="button" aria-haspopup="dialog" aria-controls="news-more-dialog">更多新闻 <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></button></div>
+      <div class="news-grid"><div class="news-cover"><svg class="icon" aria-hidden="true"><use href="#photo"/></svg><h3>研究院动态</h3><p lang="en">Institute News</p></div><ul class="news-list" aria-label="研究院新闻"><li class="news-empty">暂无新闻。<br><span lang="en">No news has been published yet.</span></li></ul></div>
+      <dialog class="news-dialog" id="news-more-dialog" aria-labelledby="news-more-title"><div class="news-dialog-head"><h3 id="news-more-title">全部新闻</h3><button class="news-dialog-close" type="button" aria-label="关闭新闻列表"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><ul class="news-list" aria-label="全部研究院新闻"><li class="news-empty">暂无新闻。<br><span lang="en">No news has been published yet.</span></li></ul></dialog>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap"><div class="footer-main"><div><div class="footer-name"><span class="name-part">南昌大学青原</span><span class="name-part">乡村振兴发展研究院</span></div><div class="footer-name-en" lang="en">Qingyuan Institute for Rural Revitalization and Development, Nanchang University</div><p class="footer-address">江西省吉安市青原区河东街道东井冈路<br>青原区行政中心（发改委大楼6楼）</p></div><div class="footer-links"><a href="#top">返回顶部<svg class="icon" aria-hidden="true"><use href="#up"/></svg></a></div></div></div></footer>
+  <script>(() => {
+  const header=document.querySelector('.header');
+  const syncHeaderHeight=()=>document.documentElement.style.setProperty('--header',`${header.getBoundingClientRect().height}px`);
+  syncHeaderHeight();
+  new ResizeObserver(syncHeaderHeight).observe(header);
+  document.querySelectorAll('.person-bio-toggle').forEach(button=>button.addEventListener('click',()=>{
+    const expanded=button.getAttribute('aria-expanded')!=='true';
+    button.setAttribute('aria-expanded',String(expanded));
+    button.querySelector('span').textContent=expanded?'收起介绍':'展开介绍';
+    document.getElementById(button.getAttribute('aria-controls')).hidden=!expanded;
+  }));
+  const nav=document.querySelector('#main-nav'), toggle=document.querySelector('.menu-toggle');
+  const setMenu=open=>{nav.classList.toggle('is-open',open);toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'收起导航菜单':'展开导航菜单');};
+  toggle.addEventListener('click',()=>setMenu(toggle.getAttribute('aria-expanded')!=='true'));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&toggle.getAttribute('aria-expanded')==='true'){setMenu(false);toggle.focus();}});
+  document.addEventListener('click',e=>{if(!e.target.closest('.header'))setMenu(false);});
+  document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener('click',()=>{if(link.dataset.openResearch)document.getElementById(link.dataset.openResearch).open=true;setMenu(false);}));
+  const revealHash=()=>{const target=document.getElementById(location.hash.slice(1));if(target?.matches('.research-item'))target.open=true;};
+  revealHash();window.addEventListener('hashchange',revealHash);
+  const sections=[...document.querySelectorAll('main > section[id]')], links=[...nav.querySelectorAll('a')];
+  const updateActive=()=>{let active=null;const offset=document.querySelector('.header').getBoundingClientRect().height+90;for(const section of sections)if(section.getBoundingClientRect().top<=offset)active=section.id;for(const link of links){if(link.getAttribute('href')==='#'+active)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');}};
+  let ticking=false;window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(()=>{updateActive();ticking=false;});ticking=true;}},{passive:true});
+  window.addEventListener('resize',()=>{if(innerWidth>850)setMenu(false);updateActive();});updateActive();
+  const slides=[...document.querySelectorAll('.hero-slide')], buttons=[...document.querySelectorAll('.carousel-controls button:not(.carousel-pause)')];
+  const captions=['山水青原','行读青原','数字文旅'];
+  const pause=document.querySelector('.carousel-pause'), frame=document.querySelector('.hero-art');
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)');
+  let index=0, timer=null, paused=reduce.matches;
+  const showSlide=n=>{index=n;slides.forEach((slide,i)=>{slide.classList.toggle('is-active',i===n);slide.setAttribute('aria-hidden',String(i!==n));});buttons.forEach((b,i)=>b.setAttribute('aria-current',String(i===n)));document.getElementById('hero-caption').textContent=captions[n];};
+  const stop=()=>{clearInterval(timer);timer=null;};
+  const sync=()=>{stop();pause.textContent=paused?'播放':'暂停';pause.setAttribute('aria-pressed',String(paused));pause.setAttribute('aria-label',paused?'播放自动切换':'暂停自动切换');if(!paused&&!document.hidden&&!frame.matches(':hover')&&!frame.contains(document.activeElement))timer=setInterval(()=>showSlide((index+1)%slides.length),5500);};
+  buttons.forEach((button,i)=>button.addEventListener('click',()=>{showSlide(i);sync();}));
+  pause.addEventListener('click',()=>{paused=!paused;sync();});
+  frame.addEventListener('mouseenter',stop);frame.addEventListener('mouseleave',sync);frame.addEventListener('focusin',stop);frame.addEventListener('focusout',()=>setTimeout(sync,0));document.addEventListener('visibilitychange',sync);reduce.addEventListener('change',()=>{paused=reduce.matches;sync();});sync();
+  const dialog=document.querySelector('#news-more-dialog');
+  document.querySelector('.news-more-trigger').addEventListener('click',()=>dialog.showModal());
+  dialog.querySelector('.news-dialog-close').addEventListener('click',()=>dialog.close());
+  dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
+})();
+</script>
+</body>
+</html>
