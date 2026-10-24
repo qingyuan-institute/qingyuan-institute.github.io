@@ -8,8 +8,9 @@
   <meta name="theme-color" content="#2e6a67">
   <title>南昌大学青原乡村振兴发展研究院｜Qingyuan Institute for Rural Revitalization and Development, Nanchang University</title>
   <style>
-    @font-face{font-family:"City Serif";src:url("assets/heading.ttf") format("truetype");font-weight:500;font-style:normal;font-display:swap}
-    :root{--paper:#f1f0e8;--white:#ffffff;--ink:#213b38;--muted:#506864;--line:#c0d0c7;--accent:#2e6a67;--accent-dark:#214f4c;--celadon:#d7e6db;--serif:"City Serif","Noto Serif SC","STSong","SimSun",serif;--sans:"Microsoft YaHei","PingFang SC",sans-serif;--wrap:1264px;--gutter:48px;--header:92px}
+    @font-face{font-family:"Qingyuan Song";src:url("assets/heading-song.woff2?v=fdcec30e9c53") format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+    @font-face{font-family:"Qingyuan Hei";src:url("assets/heading-hei.woff2?v=75f55eeea8ca") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+    :root{--paper:#f1f0e8;--white:#ffffff;--ink:#213b38;--muted:#506864;--line:#c0d0c7;--accent:#2e6a67;--accent-dark:#214f4c;--celadon:#d7e6db;--serif:"Qingyuan Song","Noto Serif SC","Songti SC","SimSun",serif;--hei:"Qingyuan Hei","Noto Sans SC","SimHei","PingFang SC","Microsoft YaHei",sans-serif;--sans:"Microsoft YaHei","PingFang SC",sans-serif;--wrap:1264px;--gutter:48px;--header:92px}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header) + 20px);scrollbar-color:var(--accent) var(--paper)}
     body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased}
@@ -303,6 +304,12 @@
 
 /* Full postal address beneath the header title. */
 .identity-text .affiliation{letter-spacing:0;line-height:1.7;max-width:560px}
+
+/* Complete Song/Hei subsets prevent per-character font fallback. */
+.institute-name,.institute-english{font-family:var(--serif);font-synthesis:none}
+.institute-name .name-part{font:inherit;letter-spacing:inherit}
+.hero h1{font-family:var(--hei);font-weight:700;font-synthesis:none}
+.hero h1>span{font:inherit;letter-spacing:inherit}
 </style>
 </head>
 <body id="top">
@@ -360,7 +367,7 @@
 <a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/cxghx/328ecff7accc49be9cdcdfafc9720675.htm" target="_blank" rel="noopener noreferrer" aria-label="查看周志仪南昌大学教师主页"><div class="person-visual"><img src="portraits/zhouzhiyi-normalized.png" alt="周志仪肖像" width="600" height="800" loading="lazy"></div><h3 id="person-zhouzhiyi">周志仪</h3><p class="person-title">教授</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
 <a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/jzx/5b3f948c046f4114829386fb64441d25.htm" target="_blank" rel="noopener noreferrer" aria-label="查看黄景勇南昌大学教师主页"><div class="person-visual"><img src="portraits/huangjingyong-normalized.png" alt="黄景勇肖像" width="600" height="800" loading="lazy"></div><h3 id="person-huangjingyong">黄景勇</h3><p class="person-title">教授</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
 <a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/yssjx/a40278905d9d4f109bf2487fc87a1e63.htm" target="_blank" rel="noopener noreferrer" aria-label="查看黄东升南昌大学教师主页"><div class="person-visual"><img src="portraits/huangdongsheng-normalized.png" alt="黄东升肖像" width="600" height="800" loading="lazy"></div><h3 id="person-huangdongsheng">黄东升</h3><p class="person-title">教授</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
-<a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/jzx/d66275a2a6054a43b55d2c2a2ffb784c.htm" target="_blank" rel="noopener noreferrer" aria-label="查看张嘉新南昌大学教师主页"><div class="person-visual"><img src="portraits/zhangjiaxin-normalized.png" alt="张嘉新肖像" width="600" height="800" loading="lazy"></div><h3 id="person-zhangjiaxin">张嘉新</h3><p class="person-title">副教授</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
+<a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/jzx/d66275a2a6054a43b55d2c2a2ffb784c.htm" target="_blank" rel="noopener noreferrer" aria-label="查看张嘉新南昌大学教师主页"><div class="person-visual"><img src="portraits/zhangjiaxin-normalized.png" alt="张嘉新肖像" width="600" height="800" loading="lazy"></div><h3 id="person-zhangjiaxin">张嘉新</h3><p class="person-title">副教授，青原研究院负责人</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
 <a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/W/82df1b3dcbf24a08b5a08b0f8e4d04a3.htm" target="_blank" rel="noopener noreferrer" aria-label="查看王睿南昌大学教师主页"><div class="person-visual"><img src="portraits/wangrui-ppt.jpg" alt="王睿肖像" width="600" height="800" loading="lazy"></div><h3 id="person-wangrui">王睿</h3><p class="person-title">副教授</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
 <a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/cxghx/2a23e38b211542cc8b5593035d6da59f.htm" target="_blank" rel="noopener noreferrer" aria-label="查看李名飞南昌大学教师主页"><div class="person-visual"><img src="portraits/limingfei-normalized.png" alt="李名飞肖像" width="600" height="800" loading="lazy"></div><h3 id="person-limingfei">李名飞</h3><p class="person-title">副教授</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
 <a class="person" href="https://jzysjxy.ncu.edu.cn/szdw/zzjs/L/9394bb4540694359842c9aae29674389.htm" target="_blank" rel="noopener noreferrer" aria-label="查看李韵琴南昌大学教师主页"><div class="person-visual"><img src="portraits/liyunqin-ppt.png" alt="李韵琴肖像" width="600" height="800" loading="lazy"></div><h3 id="person-liyunqin">李韵琴</h3><p class="person-title">讲师</p><span class="person-action">查看南昌大学教师主页<svg class="icon" aria-hidden="true"><use href="#diagonal"/></svg></span></a>
