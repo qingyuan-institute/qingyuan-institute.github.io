@@ -1,6 +1,7 @@
 <!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>新闻文章页示例｜南昌大学青原乡村振兴发展研究院</title><style>
-    @font-face{font-family:"City Serif";src:url("../assets/heading.ttf") format("truetype");font-weight:500;font-style:normal;font-display:swap}
-    :root{--paper:#f1f0e8;--white:#ffffff;--ink:#213b38;--muted:#506864;--line:#c0d0c7;--accent:#2e6a67;--accent-dark:#214f4c;--celadon:#d7e6db;--serif:"City Serif","Noto Serif SC","STSong","SimSun",serif;--sans:"Microsoft YaHei","PingFang SC",sans-serif;--wrap:1264px;--gutter:48px;--header:92px}
+    @font-face{font-family:"Qingyuan Song";src:url("../assets/heading-song.woff2?v=fdcec30e9c53") format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+    @font-face{font-family:"Qingyuan Hei";src:url("../assets/heading-hei.woff2?v=75f55eeea8ca") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+    :root{--paper:#f1f0e8;--white:#ffffff;--ink:#213b38;--muted:#506864;--line:#c0d0c7;--accent:#2e6a67;--accent-dark:#214f4c;--celadon:#d7e6db;--serif:"Qingyuan Song","Noto Serif SC","Songti SC","SimSun",serif;--hei:"Qingyuan Hei","Noto Sans SC","SimHei","PingFang SC","Microsoft YaHei",sans-serif;--sans:"Microsoft YaHei","PingFang SC",sans-serif;--wrap:1264px;--gutter:48px;--header:92px}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header) + 20px);scrollbar-color:var(--accent) var(--paper)}
     body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased}
@@ -294,4 +295,10 @@
 
 /* Full postal address beneath the header title. */
 .identity-text .affiliation{letter-spacing:0;line-height:1.7;max-width:560px}
+
+/* Complete Song/Hei subsets prevent per-character font fallback. */
+.institute-name,.institute-english{font-family:var(--serif);font-synthesis:none}
+.institute-name .name-part{font:inherit;letter-spacing:inherit}
+.hero h1{font-family:var(--hei);font-weight:700;font-synthesis:none}
+.hero h1>span{font:inherit;letter-spacing:inherit}
 </style></head><body class="article-page"><a class="skip" href="#main">跳转至正文</a><header class="header"><div class="wrap header-inner"><a class="identity" href="../index.html"><span class="identity-text"><span class="institute-name"><span class="name-part">南昌大学青原</span><span class="name-part">乡村振兴发展研究院</span></span><span class="institute-english" lang="en">Qingyuan Institute for Rural Revitalization and Development, Nanchang University</span></span></a><a class="team-directory" href="../index.html#news">返回新闻列表 →</a></div></header><main id="main" class="wrap"><article class="news-article"><div class="news-article-inner"><a class="article-return" href="../index.html#news">← 返回新闻列表</a><h1>新闻文章页示例</h1><p class="article-subtitle">仅供查看版式与跳转效果，不是正式新闻。</p><div class="article-meta"><span>版式示例 · 无发布日期</span></div><div class="article-body"><p>此处将显示正式新闻的导语，包括报道主题、时间与主要内容。</p><div class="article-image-placeholder">新闻现场照片预留位<br>Image to be supplied</div><p>正文区域预留给经过确认的新闻稿。后续文章将以独立页面展示，首页仅保留摘要，避免首页过长。</p><p>稿件来源、图片说明等信息将在收到正式资料后补充。</p></div></div></article></main><footer class="footer"><div class="wrap"><div class="footer-name"><span class="name-part">南昌大学青原</span><span class="name-part">乡村振兴发展研究院</span></div><div class="footer-name-en" lang="en">Qingyuan Institute for Rural Revitalization and Development, Nanchang University</div></div></footer></body></html>
