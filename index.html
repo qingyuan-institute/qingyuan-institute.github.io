@@ -8,8 +8,8 @@
   <meta name="theme-color" content="#2e6a67">
   <title>南昌大学青原乡村振兴发展研究院｜Qingyuan Institute for Rural Revitalization and Development, Nanchang University</title>
   <style>
-    @font-face{font-family:"Qingyuan Song";src:url("assets/heading-song.woff2?v=fdcec30e9c53") format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
-    @font-face{font-family:"Qingyuan Hei";src:url("assets/heading-hei.woff2?v=75f55eeea8ca") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+    @font-face{font-family:"Qingyuan Song";src:url("assets/heading-song.woff2?v=5b4ab8f32dc5") format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+    @font-face{font-family:"Qingyuan Hei";src:url("assets/heading-hei.woff2?v=b2918f65bdd5") format("woff2");font-weight:700;font-style:normal;font-display:swap}
     :root{--paper:#f1f0e8;--white:#ffffff;--ink:#213b38;--muted:#506864;--line:#c0d0c7;--accent:#2e6a67;--accent-dark:#214f4c;--celadon:#d7e6db;--serif:"Qingyuan Song","Noto Serif SC","Songti SC","SimSun",serif;--hei:"Qingyuan Hei","Noto Sans SC","SimHei","PingFang SC","Microsoft YaHei",sans-serif;--sans:"Microsoft YaHei","PingFang SC",sans-serif;--wrap:1264px;--gutter:48px;--header:92px}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header) + 20px);scrollbar-color:var(--accent) var(--paper)}
@@ -261,6 +261,12 @@
 .article-page h1{font:700 clamp(27px,3vw,40px)/1.5 var(--serif)}
 .article-page .article-body{max-width:72ch;margin-inline:auto}
 .article-image-placeholder{min-height:230px;background:#d7e6db;color:#213b38;display:flex;align-items:center;justify-content:center;padding:30px;text-align:center;margin-block:30px}
+.article-body .article-media{margin:28px 0 32px}
+.article-media img,.article-media video{display:block;width:100%;height:auto;max-width:100%;border-radius:0}
+.article-media video{aspect-ratio:16/9;background:#102e26;object-fit:contain}
+.article-media figcaption{margin-top:10px;color:var(--muted);font-size:13px;line-height:1.8;text-align:center}
+.article-video-link{display:inline-block;margin-left:16px;text-decoration:underline;text-underline-offset:3px}
+.article-body .article-review{margin-top:30px;font-size:14px;text-align:right;color:var(--muted)}
 @media(max-width:850px){.institute-name{font-size:24px}.theme-placeholder{padding:30px}.place-title{font-size:42px}.place-en{font-size:12px;letter-spacing:.03em}.place-caption{margin-top:28px;font-size:12px}.research-output{margin-top:0}}
 @media(max-width:600px){.institute-name{font-size:22px}.identity-text .institute-english{font-size:11px}.identity-text .affiliation{font-size:10px}.theme-placeholder{padding:27px 22px 54px}.place-title{font-size:40px}.place-en{font-size:11px}.place-caption{margin-top:18px;padding-top:12px;font-size:11px}.news-cover{min-height:240px;padding:26px}.news-cover h3{font-size:24px}.article-page .header-inner{flex-wrap:wrap;padding-block:12px}.article-page .header-inner>.team-directory{margin-left:auto}.article-page .news-article{padding-block:30px 50px}.research-output{padding-top:12px}.footer-bottom{gap:20px}}
 @media(max-width:600px){.hero-art{padding-bottom:18px}.hero-art .photo-caption{position:static;display:block;background:none;color:var(--muted);padding:12px 0 0;font-size:11px}.carousel-controls{bottom:64px}}
@@ -377,8 +383,8 @@
     </div></section>
     <section class="section wrap" id="news" aria-labelledby="news-title">
       <div class="section-head"><h2 id="news-title">研究院新闻<span class="section-en" lang="en">News</span></h2><button class="news-more-trigger" type="button" aria-haspopup="dialog" aria-controls="news-more-dialog">更多新闻 <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></button></div>
-      <div class="news-grid"><div class="news-cover"><svg class="icon" aria-hidden="true"><use href="#photo"/></svg><h3>研究院动态</h3><p lang="en">Institute News</p></div><ul class="news-list" aria-label="研究院新闻"><li class="news-empty">暂无新闻。<br><span lang="en">No news has been published yet.</span></li></ul></div>
-      <dialog class="news-dialog" id="news-more-dialog" aria-labelledby="news-more-title"><div class="news-dialog-head"><h3 id="news-more-title">全部新闻</h3><button class="news-dialog-close" type="button" aria-label="关闭新闻列表"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><ul class="news-list" aria-label="全部研究院新闻"><li class="news-empty">暂无新闻。<br><span lang="en">No news has been published yet.</span></li></ul></dialog>
+      <div class="news-grid"><a class="news-cover" href="news/qingyuan-cultural-tourism-research-20261029.html"><h3>南昌大学师生赴青原山开展文旅提升调研</h3><p>张嘉新老师带领3名研究生赴青原山景区，围绕空间体验、数字导览与文化产品设计开展调研交流。</p><span class="team-directory">阅读全文 →</span></a><ul class="news-list" aria-label="研究院新闻"><li class="news-item"><span class="news-date">2026-10-29</span><div><h3><a href="news/qingyuan-cultural-tourism-research-20261029.html">南昌大学师生赴青原山开展文旅提升调研</a></h3><p>张嘉新老师带领3名研究生赴青原山景区，围绕空间体验、数字导览与文化产品设计开展调研交流。</p></div></li></ul></div>
+      <dialog class="news-dialog" id="news-more-dialog" aria-labelledby="news-more-title"><div class="news-dialog-head"><h3 id="news-more-title">全部新闻</h3><button class="news-dialog-close" type="button" aria-label="关闭新闻列表"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><ul class="news-list" aria-label="全部研究院新闻"><li class="news-item"><span class="news-date">2026-10-29</span><div><h3><a href="news/qingyuan-cultural-tourism-research-20261029.html">南昌大学师生赴青原山开展文旅提升调研</a></h3><p>张嘉新老师带领3名研究生赴青原山景区，围绕空间体验、数字导览与文化产品设计开展调研交流。</p></div></li></ul></dialog>
     </section>
   </main>
   <footer class="footer"><div class="wrap"><div class="footer-main"><div><div class="footer-name"><span class="name-part">南昌大学青原</span><span class="name-part">乡村振兴发展研究院</span></div><div class="footer-name-en" lang="en">Qingyuan Institute for Rural Revitalization and Development, Nanchang University</div><p class="footer-address">江西省吉安市青原区河东街道东井冈路<br>青原区行政中心（发改委大楼6楼）</p></div><div class="footer-links"><a href="#top">返回顶部<svg class="icon" aria-hidden="true"><use href="#up"/></svg></a></div></div></div></footer>
