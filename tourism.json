@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "articles": [
+    {
+      "slug": "yongmutang-ar-postcard-20261127",
+      "href": "tourism/yongmutang-ar-postcard-20261127.html",
+      "title": "把永慕堂装进一张明信片",
+      "date": "2026-11-27",
+      "summary": "本文记录了永慕堂 AR 明信片从选题到交付的完整制作过程。",
+      "bodyFile": "articles/yongmutang-ar-postcard-20261127.html",
+      "mediaPaths": [
+        "assets/news/yongmutang-ar-20261127-01.png",
+        "assets/news/yongmutang-ar-20261127-02.png",
+        "assets/news/yongmutang-ar-20261127-03.png",
+        "assets/news/yongmutang-ar-20261127-04.png",
+        "assets/news/yongmutang-ar-20261127-05.jpg",
+        "assets/news/yongmutang-ar-20261127-06.png",
+        "assets/news/yongmutang-ar-20261127-07.jpg",
+        "assets/news/yongmutang-ar-20261127-08.png",
+        "assets/news/yongmutang-ar-20261127-09.png",
+        "assets/news/yongmutang-ar-20261127-10.png",
+        "assets/news/yongmutang-ar-20261127-11.jpg",
+        "assets/news/yongmutang-ar-20261127-12.jpg",
+        "assets/news/yongmutang-ar-20261127-13.jpg"
+      ],
+      "review": "一审：李韵琴；二审：张嘉新；三审：周志仪"
+    }
+  ]
+}
